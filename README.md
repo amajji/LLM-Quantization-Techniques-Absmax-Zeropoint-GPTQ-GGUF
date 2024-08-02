@@ -8,6 +8,7 @@ Data scientist | [Anass MAJJI](https://www.linkedin.com/in/anass-majji-729773157
 ## :monocle_face: Description
 LLM are known for their expensive computational requierements. Typically, the memory needed for a model is calculated by multiplying its number of parameters by the precision of these values(data type). However, to reduce memory consumption, numbers can be stored using lower precision data types through a process known as quantization. 
 We distinguish two types of weight quatization families : 
+
 - **Post training quantization (PTQ)** : is a technique where weights of an already trained model are converted to lower precision without necessitating any retraining. Although easy to implement, PTQ is associated with potential performance degradation. In this project, we are going to implement, 4 quantization techniques : 
 	- Two naive 8-bit quantization techniques : a symmetric one with absolute maximum quantization (absmax) and an asymmetric one with zero-point quantization. In both cases, the goal is to map an FP32 tensor (original weights) to an INT8 tensor (quantized weights).
 	- Two noval 4-bit quantization techniques with minimal performance degradation : GPTQ and GGUF : 
