@@ -17,4 +17,4 @@ We distinguish two types of weight quatization families :
 		- **GGUF** : Although GPTQ is a great quantization technique to run a full LLM on a GPU, we might not always have that capacity. Instead, we can use GGUF to offload any layer of the LLM to the CPU. This technique consists in splitting a given layer into **super block**, each containing a set of **sub blocks**. We extract the scaling factor from the **super block** and then we quantize the **sub blocks** using absolute maximum quantization technique: the scale factor is calculated using the information from the **sub block** but is quantized using the scale factor of the **super block**.
 
 
-- **Quantization aware training (QAT)** : this technique consists in converting weights to lower precision during pre-training or finetuning stage resulting in enhenced model performance.
+- **Quantization aware training (QAT)** : this technique consists in converting weights to lower precision during pre-training or finetuning stage resulting in enhenced model performance. 
